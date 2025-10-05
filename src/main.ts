@@ -3,10 +3,10 @@ import { NestFactory } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { Logger } from '@nestjs/common';
 import { AppModule } from './app.module';
-import { envs, initializeEnvs } from '@config/env';
 import { setupSwagger } from '@config/swagger/swagger.config';
 import { setupSecurity } from '@config/security/security.config';
 import { setupValidation } from '@config/validation/validation.config';
+import { envs, initializeEnvs } from '@config/env';
 import { ThrottlerExceptionFilter } from '@shared/filters/throttler-exception.filter';
 
 async function bootstrap() {
